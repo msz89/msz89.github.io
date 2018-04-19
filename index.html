@@ -12,10 +12,28 @@
   .jumbotron { 
       background-color: #f4511e; /* Orange */
       color: #ffffff;
+      padding: 100px 25px;
   }
+
   .bg-grey {
       background-color: #f6f6f6;
   }
+
+  .container-fluid {
+    padding: 60px 50px;
+  }
+
+  .logo {
+    font-size: 200px;
+  }
+
+  @media screen and (max-width: 768px) {
+      .col-sm-4 {
+          text-align: center;
+          margin: 25px 0;
+      }
+  }
+
   </style>
 
 </head>
@@ -27,16 +45,31 @@
 </div>
 
 <div class="container-fluid">
-  <h2>About Company Page</h2>
-  <h4>Lorem ipsum..</h4> 
-  <p>Lorem ipsum..</p>
-  <button class="btn btn-default btn-lg">Get in Touch</button>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Analytics</h2>
+      <h4>Valuation model</h4> 
+      <p>I worked with the Frankl Founders to create a financial model for their blockchain token to enable open science. I then built a Shinyapp to allow them to show their community what goes on behind the scenes in their valuation. It's hosted <a href ="https://mszwec.shinyapps.io/valuation/">here. </a> </p>
+      <button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
 </div>
 
 <div class="container-fluid bg-grey">
-  <h2>Our Values</h2>
-  <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4> 
-  <p><strong>VISION:</strong> Our vision Lorem ipsum..
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo"></span> 
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4> 
+      <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>
+    </div>
+  </div>
 </div>
+
 </body>
 </html>
